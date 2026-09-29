@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@fontsource-variable/sora";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
+:root {
+    --font-heading: 'Sora Variable', sans-serif;
+    --font-sans: 'Inter Variable', sans-serif;
+    --font-mono: 'JetBrains Mono Variable', monospace;
+    --background: #080c14;
+    --foreground: #f0f6fc;
+    --card: #161b22;
+    --card-foreground: #f0f6fc;
+    --popover: #161b22;
+    --popover-foreground: #f0f6fc;
+    --primary: #2f81f7;
+    --primary-foreground: #ffffff;
+    --secondary: #21262d;
+    --secondary-foreground: #f0f6fc;
+    --muted: #21262d;
+    --muted-foreground: #8b949e;
+    --accent: #21262d;
+    --accent-foreground: #f0f6fc;
+    --destructive: #f85149;
+    --border: #30363d;
+    --input: #30363d;
+    --ring: #58a6ff;
+    --sidebar: #0d1117;
+    --sidebar-foreground: #f0f6fc;
+    --sidebar-primary: #2f81f7;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #21262d;
+    --sidebar-accent-foreground: #f0f6fc;
+    --sidebar-border: #30363d;
+    --sidebar-ring: #58a6ff;
+    --background: #080c14;
+    --foreground: #f0f6fc;
+    --card: #161b22;
+    --card-foreground: #f0f6fc;
+    --popover: #161b22;
+    --popover-foreground: #f0f6fc;
+    --primary: #2f81f7;
+    --primary-foreground: #ffffff;
+    --secondary: #21262d;
+    --secondary-foreground: #f0f6fc;
+    --muted: #21262d;
+    --muted-foreground: #8b949e;
+    --accent: #21262d;
+    --accent-foreground: #f0f6fc;
+    --destructive: #f85149;
+    --border: #30363d;
+    --input: #30363d;
+    --ring: #58a6ff;
+    --sidebar: #0d1117;
+    --sidebar-foreground: #f0f6fc;
+    --sidebar-primary: #2f81f7;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #21262d;
+    --sidebar-accent-foreground: #f0f6fc;
+    --sidebar-border: #30363d;
+    --sidebar-ring: #58a6ff;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    min-width: 320px;
+    overflow-x: hidden;
+  }
+
+@keyframes signal-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(63, 185, 80, 0.15); }
+  50% { opacity: 0.55; box-shadow: 0 0 0 4px rgba(63, 185, 80, 0); }
+}
+
+.signal-pulse { animation: signal-pulse 2.4s ease-in-out infinite; }
+
+* { scrollbar-width: thin; scrollbar-color: #30363d transparent; }
+*::-webkit-scrollbar { width: 6px; height: 6px; }
+*::-webkit-scrollbar-thumb { background: #30363d; border-radius: 999px; }
